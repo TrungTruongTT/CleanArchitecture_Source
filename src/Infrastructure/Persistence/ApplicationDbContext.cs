@@ -32,7 +32,6 @@ public class ApplicationDbContext : ApiAuthorizationDbContext<ApplicationUser>, 
 
     public DbSet<TodoItem> TodoItems => Set<TodoItem>();
 
-
     public DbSet<Audio> Audio => Set<Audio>();
     public DbSet<Category> Category => Set<Category>();
     public DbSet<Chat> Chat => Set<Chat>();
@@ -44,7 +43,8 @@ public class ApplicationDbContext : ApiAuthorizationDbContext<ApplicationUser>, 
     public DbSet<Room> Room => Set<Room>();
     public DbSet<Streamer> Streamer => Set<Streamer>();
     public DbSet<Users> Users => Set<Users>();
-
+    public DbSet<Advertisement> Advertisements => Set<Advertisement>();
+    public DbSet<Bad_Words> Bad_Words => Set<Bad_Words>();
     protected override void OnModelCreating(ModelBuilder builder)
     {
         builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());

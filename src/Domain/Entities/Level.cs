@@ -9,4 +9,5 @@ public class Level :BaseAuditableEntity
     public string Name_level { get; set; }
     public int Exp { get; set; }
     public IList<Follower> FollowerList { get; set;}
+
 }

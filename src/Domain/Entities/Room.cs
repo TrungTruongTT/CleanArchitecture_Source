@@ -24,5 +24,4 @@ public class Room : BaseAuditableEntity
     public virtual Category Category { get; set; }
     public virtual Streamer Streamer { get; set; }
 
-
 }
